@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="icon" href="img/flickr-favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,11 +13,12 @@
     />
 
     <link href="style.css" rel="stylesheet" />
+    <link href="media-queries.css" rel="stylesheet" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script defer src="script.js"></script>
-    <title>Find your inspiration. |Flickr flickr.com</title>
+    <title>Find your inspiration. | Flickr flickr.com</title>
   </head>
   <body>
     <div class="main" id="img">
@@ -37,89 +38,169 @@
             class="input"
           />
         </div>
+
         <nav class="nav">
+          <div class="search">
+            <ion-icon name="search-outline"></ion-icon>
+          </div>
           <btn class="log-in">Log In</btn>
           <btn class="sign-up">Sign Up</btn>
         </nav>
       </header>
-      <main>
+      <main class="container">
         <h1 class="primary-heading">Find your inspiration.</h1>
         <h2 class="secondary-heading">
           Join the Flickr community, home to tens of billions of photos and 2
-          million groups
+          million groups.
         </h2>
         <btn class="start">Start for free</btn>
       </main>
     </div>
     <footer>
-      <ul class="links">
-        <li>
-          <a href="#" class="footer-link">About</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">Jobs</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">Blog</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">Developers</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">Guidelines</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">Help</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">Help forum</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">Privacy</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">Terms</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link">Cookies</a>
-        </li>
-        <li>
-          <div class="language">
-            <a href="#" class="footer-link">English</a>
-            <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>
+      <div class="footer-big">
+        <ul class="links">
+          <li>
+            <a href="#" class="footer-link">About</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Jobs</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Developers</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Guidelines</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Help</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Help forum</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link privacy">Privacy</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Terms</a>
+          </li>
+          <li>
+            <a href="#" class="footer-link">Cookies</a>
+          </li>
+          <li class="english">
+            <div class="language">
+              <a href="#" class="footer-link">English</a>
+              <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>
+            </div>
+          </li>
+          <li>
+            <a href="#" class="footer-link">SmugMug+Flickr.</a>
+          </li>
+          <div class="social-media-links">
+            <li>
+              <a href="#" class="footer-link social-media"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link social-media"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="footer-link social-media"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
           </div>
-        </li>
-        <li>
-          <a href="#" class="footer-link">SmugMug+Flickr.</a>
-        </li>
-        <li>
-          <a href="#" class="footer-link social-media"
-            ><ion-icon name="logo-facebook"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a href="#" class="footer-link social-media"
-            ><ion-icon name="logo-twitter"></ion-icon
-          ></a>
-        </li>
-        <li>
-          <a href="#" class="footer-link social-media"
-            ><ion-icon name="logo-instagram"></ion-icon
-          ></a>
-        </li>
-      </ul>
+        </ul>
 
-      <ul class="lang-list">
-        <li><a href="#" class="diff-lang">繁体中文</a></li>
-        <li><a href="#" class="diff-lang">Deutsch</a></li>
-        <li><a href="#" class="diff-lang">Español</a></li>
-        <li><a href="#" class="diff-lang">Français</a></li>
-        <li><a href="#" class="diff-lang">한국</a></li>
-        <li><a href="#" class="diff-lang">Italiano</a></li>
-        <li><a href="#" class="diff-lang">Português</a></li>
-        <li><a href="#" class="diff-lang">Tiếng Việt</a></li>
-        <li><a href="#" class="diff-lang">Bahasa Indonesia</a></li>
-      </ul>
+        <ul class="lang-list">
+          <li><a href="#" class="diff-lang">繁体中文</a></li>
+          <li><a href="#" class="diff-lang">Deutsch</a></li>
+          <li><a href="#" class="diff-lang">Español</a></li>
+          <li><a href="#" class="diff-lang">Français</a></li>
+          <li><a href="#" class="diff-lang">한국</a></li>
+          <li><a href="#" class="diff-lang">Italiano</a></li>
+          <li><a href="#" class="diff-lang">Português</a></li>
+          <li><a href="#" class="diff-lang">Tiếng Việt</a></li>
+          <li><a href="#" class="diff-lang">Bahasa Indonesia</a></li>
+        </ul>
+      </div>
+      <div class="footer-small">
+        <ul class="links">
+          <div class="footer-top">
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Jobs</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Developers</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Guidelines</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Help</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Help forum</a>
+            </li>
+            <li class="english">
+              <div class="language">
+                <a href="#" class="footer-link">English</a>
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="chevron"
+                ></ion-icon>
+              </div>
+            </li>
+          </div>
+          <div class="footer-bottom">
+            <div class="ftr-ptc">
+              <li>
+                <a href="#" class="footer-link privacy">Privacy</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Terms</a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">Cookies</a>
+              </li>
+            </div>
+
+            <li>
+              <a href="#" class="footer-link smug"
+                >SmugMug+Flickr. Connecting people through photography.
+              </a>
+            </li>
+            <div class="social-media-links">
+              <li>
+                <a href="#" class="footer-link social-media"
+                  ><ion-icon name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="footer-link social-media"
+                  ><ion-icon name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="footer-link social-media"
+                  ><ion-icon name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </div>
     </footer>
     <script
       type="module"
