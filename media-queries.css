@@ -49,7 +49,8 @@
     align-items: stretch;
   }
 
-  .footer-link {
+  .footer-link,
+  .footer-plus {
     font-size: 1.2rem;
   }
   .footer-top {

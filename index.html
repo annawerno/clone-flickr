@@ -17,7 +17,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script defer src="script.js"></script>
+    <!-- <script defer src="script.js"></script> -->
     <title>Find your inspiration. | Flickr flickr.com</title>
   </head>
   <body>
@@ -93,10 +93,49 @@
             <div class="language">
               <a href="#" class="footer-link">English</a>
               <ion-icon name="chevron-down-outline" class="chevron"></ion-icon>
+              <div class="popup">
+                <ul class="lang-list">
+                  <li class="lang-container">
+                    <a href="#" class="diff-lang">繁体中文</a>
+                  </li>
+
+                  <li class="lang-container">
+                    <a href="#" class="diff-lang">Deutsch</a>
+                  </li>
+                  <li class="lang-container">
+                    <a href="#" class="diff-lang">Español</a>
+                  </li>
+                  <li class="lang-container">
+                    <a href="#" class="diff-lang">Français</a>
+                  </li>
+                  <li class="lang-container">
+                    <a href="#" class="diff-lang">한국</a>
+                  </li>
+                  <li class="lang-container">
+                    <a href="#" class="diff-lang">Italiano</a>
+                  </li>
+                  <li class="lang-container">
+                    <a href="#" class="diff-lang">Português</a>
+                  </li>
+                  <li class="lang-container">
+                    <a href="#" class="diff-lang">Tiếng Việt</a>
+                  </li>
+                  <li class="lang-container">
+                    <a href="#" class="diff-lang">Bahasa Indonesia</a>
+                  </li>
+                </ul>
+                <ion-icon
+                  class="lang-caret"
+                  name="caret-down-outline"
+                ></ion-icon>
+              </div>
             </div>
           </li>
           <li>
-            <a href="#" class="footer-link">SmugMug+Flickr.</a>
+            <a href="#" class="footer-link">SmugMug</a
+            ><span class="footer-plus">+</span
+            ><a href="#" class="footer-link">Flickr</a
+            ><span class="footer-plus">.</span>
           </li>
           <div class="social-media-links">
             <li>
@@ -115,18 +154,6 @@
               ></a>
             </li>
           </div>
-        </ul>
-
-        <ul class="lang-list">
-          <li><a href="#" class="diff-lang">繁体中文</a></li>
-          <li><a href="#" class="diff-lang">Deutsch</a></li>
-          <li><a href="#" class="diff-lang">Español</a></li>
-          <li><a href="#" class="diff-lang">Français</a></li>
-          <li><a href="#" class="diff-lang">한국</a></li>
-          <li><a href="#" class="diff-lang">Italiano</a></li>
-          <li><a href="#" class="diff-lang">Português</a></li>
-          <li><a href="#" class="diff-lang">Tiếng Việt</a></li>
-          <li><a href="#" class="diff-lang">Bahasa Indonesia</a></li>
         </ul>
       </div>
       <div class="footer-small">
@@ -160,6 +187,23 @@
                   name="chevron-down-outline"
                   class="chevron"
                 ></ion-icon>
+                <div class="popup hidden">
+                  <ul class="lang-list">
+                    <li><a href="#" class="diff-lang">繁体中文</a></li>
+                    <li><a href="#" class="diff-lang">Deutsch</a></li>
+                    <li><a href="#" class="diff-lang">Español</a></li>
+                    <li><a href="#" class="diff-lang">Français</a></li>
+                    <li><a href="#" class="diff-lang">한국</a></li>
+                    <li><a href="#" class="diff-lang">Italiano</a></li>
+                    <li><a href="#" class="diff-lang">Português</a></li>
+                    <li><a href="#" class="diff-lang">Tiếng Việt</a></li>
+                    <li><a href="#" class="diff-lang">Bahasa Indonesia</a></li>
+                  </ul>
+                  <ion-icon
+                    class="lang-caret"
+                    name="caret-down-outline"
+                  ></ion-icon>
+                </div>
               </div>
             </li>
           </div>
@@ -177,9 +221,12 @@
             </div>
 
             <li>
-              <a href="#" class="footer-link smug"
-                >SmugMug+Flickr. Connecting people through photography.
-              </a>
+              <a href="#" class="footer-link">SmugMug</a
+              ><span class="footer-plus">+</span
+              ><a href="#" class="footer-link">Flickr</a
+              ><span class="footer-plus"
+                >. Connecting people through photography.</span
+              >
             </li>
             <div class="social-media-links">
               <li>
@@ -210,5 +257,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -81,9 +81,13 @@ body {
 
 .input {
   border: none;
-
+  width: 100%;
   font-size: 1.4rem;
   background-color: #dee2e6;
+}
+
+.input:focus {
+  outline: none;
 }
 
 .search {
@@ -184,16 +188,17 @@ footer {
   padding: 1.5rem 2rem;
 }
 
-.footer-link {
+.footer-link,
+.footer-plus {
   text-decoration: none;
   color: #868e96;
   font-size: 1.4rem;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .footer-link:link,
 .footer-link:visited {
+  cursor: pointer;
   transition: all 0.5s;
 }
 
@@ -222,21 +227,41 @@ footer {
   font-size: 2rem;
 }
 
-.lang-list {
+.hidden {
   visibility: hidden;
+}
+.lang-list {
   position: absolute;
-  bottom: 2rem;
-  right: 32rem;
+  bottom: 26px;
+  right: -10px;
   background-color: #dee2e6;
   list-style: none;
-  padding: 2rem 2rem;
+  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  width: 160px;
+  border: 1px solid rgb(16, 16, 16);
+  border-radius: 0.6rem;
 }
 
 .diff-lang {
   text-decoration: none;
   color: #495057;
+}
+
+.lang-container {
+  padding: 0.5rem 1.5rem;
+}
+
+.lang-container:hover {
+  background-color: #c3c7cb;
+}
+
+.lang-caret {
+  position: absolute;
+  bottom: 7px;
+  right: -4px;
+  font-size: 3.2rem;
+  color: #dee2e6;
 }
