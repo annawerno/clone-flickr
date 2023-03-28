@@ -65,9 +65,10 @@ body {
 }
 
 .search-bar {
+  width: 140vh;
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
-  background-color: #f1f3f5;
+  background-color: #dee2e6;
   display: flex;
   gap: 10px;
 }
@@ -80,14 +81,25 @@ body {
 
 .input {
   border: none;
-  width: 100vh;
+  width: 100%;
   font-size: 1.4rem;
-  background-color: #f1f3f5;
+  background-color: #dee2e6;
 }
 
+.input:focus {
+  outline: none;
+}
+
+.search {
+  visibility: hidden;
+  color: #f1f3f5;
+  font-size: 3rem;
+}
 .nav {
   font-size: 1.4rem;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 
 .log-in {
@@ -114,17 +126,16 @@ body {
   color: #868e96;
 }
 
-main {
+.container {
+  height: 85vh;
+  width: 64rem;
+  margin: 0 auto;
+  color: #f1f3f5;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 5rem;
-  color: #f1f3f5;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  align-items: center;
+  gap: 4rem;
 }
 .primary-heading {
   font-weight: 600;
@@ -132,9 +143,9 @@ main {
 }
 
 .secondary-heading {
-  font-size: 2rem;
-  width: 70%;
+  font-size: 2.2rem;
   font-weight: 600;
+  line-height: 1.4;
   text-align: center;
 }
 
@@ -165,6 +176,10 @@ footer {
   padding: 0 1rem;
 }
 
+.footer-small {
+  display: none;
+}
+
 .links {
   display: flex;
   list-style: none;
@@ -173,16 +188,17 @@ footer {
   padding: 1.5rem 2rem;
 }
 
-.footer-link {
+.footer-link,
+.footer-plus {
   text-decoration: none;
   color: #868e96;
   font-size: 1.4rem;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .footer-link:link,
 .footer-link:visited {
+  cursor: pointer;
   transition: all 0.5s;
 }
 
@@ -201,25 +217,51 @@ footer {
 .chevron {
   font-size: 1.5rem;
 }
-.social-media {
-  font-size: 2.5rem;
+.social-media-links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
 }
 
-.lang-list {
+.social-media {
+  font-size: 2rem;
+}
+
+.hidden {
   visibility: hidden;
+}
+.lang-list {
   position: absolute;
-  bottom: 2rem;
-  right: 32rem;
+  bottom: 26px;
+  right: -10px;
   background-color: #dee2e6;
   list-style: none;
-  padding: 2rem 2rem;
+  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  width: 160px;
+  border: 1px solid rgb(16, 16, 16);
+  border-radius: 0.6rem;
 }
 
 .diff-lang {
   text-decoration: none;
   color: #495057;
+}
+
+.lang-container {
+  padding: 0.5rem 1.5rem;
+}
+
+.lang-container:hover {
+  background-color: #c3c7cb;
+}
+
+.lang-caret {
+  position: absolute;
+  bottom: 7px;
+  right: -4px;
+  font-size: 3.2rem;
+  color: #dee2e6;
 }
