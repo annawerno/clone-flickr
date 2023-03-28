@@ -1,3 +1,5 @@
+// FOOTER LANGUAGE POPUP FUNCTIONALITY
+
 const languageSelectionDiv = document.querySelector(".popup");
 const EnglishFooterBtn = document.querySelector(".english");
 
